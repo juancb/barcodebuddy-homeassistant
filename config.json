@@ -10,6 +10,10 @@
   "arch": ["aarch64", "amd64", "armv7"],
   "boot": "auto",
   "map": ["config:rw","ssl"],
+  "devices": [ "/dev/input/event0" ],
+  "environment": {
+    "ATTACH_BARCODESCANNER": "true"
+  },
   "ports": {
     "80/tcp": 8621
   },
